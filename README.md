@@ -17,6 +17,7 @@ Resources used while developing it:
 - [Game Boy: Complete Technical Reference (Gekkio)](https://gekkio.fi/files/gb-docs/gbctr.pdf)
 - [DMG-01: How to Emulate a Game Boy](https://rylev.github.io/DMG-01/public/book/)
 - [Writing a Game Boy Emulator (Cinoop)](https://cturt.github.io/cinoop.html)
+- [GameBoy implementation of mGBA](https://github.com/mgba-emu/mgba/tree/master/src/gb)
 
 For testing, I used:
 
