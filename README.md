@@ -7,12 +7,17 @@ A **Game Boy emulator** written in Rust.
 
 ---
 
+## Current Notice
+
+Currently, I'm learning how the Game Boy works. At first, I thought I was ready to write the emulator. Instead, after watching some videos, I decided to start slowly.
+
 ## About
 
 This emulator was built mainly for learning purposes.
 
 Resources used while developing it:
 
+- [The Ultimate Game Boy Talk](https://media.ccc.de/v/33c3-8029-the_ultimate_game_boy_talk)
 - [Pan Docs — Game Boy Technical Reference](https://gbdev.io/pandocs/)
 - [Game Boy: Complete Technical Reference (Gekkio)](https://gekkio.fi/files/gb-docs/gbctr.pdf)
 - [DMG-01: How to Emulate a Game Boy](https://rylev.github.io/DMG-01/public/book/)
@@ -37,7 +42,6 @@ I tried to write **most of the code myself**, using **minimal AI assistance**, o
 - [ ] PPU
 - [ ] Input
 - [ ] Audio
-
 ---
 
 ## Notes

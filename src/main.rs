@@ -8,6 +8,8 @@ use std::{
 
 use minifb::{Key, Window, WindowOptions};
 
+mod cpu;
+
 const WIDTH: usize = 160;
 const HEIGHT: usize = 144;
 const SIZE: usize = WIDTH * HEIGHT;
