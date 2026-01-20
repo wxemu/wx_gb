@@ -8,7 +8,13 @@ use std::{
 
 use minifb::{Key, Window, WindowOptions};
 
+mod bus;
+mod cartridge;
 mod cpu;
+
+use cartridge::CartridgeHeader;
+#[allow(unused)]
+use cpu::CPU;
 
 const WIDTH: usize = 160;
 const HEIGHT: usize = 144;
@@ -16,6 +22,9 @@ const SIZE: usize = WIDTH * HEIGHT;
 
 fn main() {
     let mut buffer = vec![0u32; SIZE];
+
+    // let mut cpu = CPU::new();
+    // cpu.init();
 
     // I WILL KEEP SOME CODE FOR LATER USE
 
@@ -28,8 +37,9 @@ fn main() {
     //     .parse::<u64>()
     //     .expect("Must provide a number");
 
-    // let rom = fs::read(format!("./roms/{rom_name}")).expect("File not exists!");
-
+    let rom = fs::read(format!("./roms/Tetris_B.gb")).expect("File not exists!");
+    let mut header = CartridgeHeader::new(rom);
+    header.display();
     // let kmap: HashMap<Key, u8> = HashMap::from([
     //     (Key::Key1, 0x1),
     //     (Key::Key2, 0x2),
