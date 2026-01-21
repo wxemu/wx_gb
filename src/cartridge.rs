@@ -2,22 +2,22 @@ use std::num::Wrapping;
 
 #[allow(unused)]
 pub struct CartridgeHeader {
-    entry: [u8; 4],
-    logo: [u8; 48],
-    title: [u8; 16],
-    gbc_flags: u8,
-    new_license: [u8; 2],
-    sgb_flag: u8,
-    rom_type: u8,
-    cart_size: u8,
-    ram_type: u8,
-    destination: u8,
-    old_license: u8,
-    mask_rom_version_number: u8,
-    header_checksum: u8,
-    global_checksum: u16,
-    data: Vec<u8>,
-    rom_0: [u8; 0x8000],
+    pub entry: [u8; 4],
+    pub logo: [u8; 48],
+    pub title: [u8; 16],
+    pub gbc_flags: u8,
+    pub new_license: [u8; 2],
+    pub sgb_flag: u8,
+    pub rom_type: u8,
+    pub cart_size: u8,
+    pub ram_type: u8,
+    pub destination: u8,
+    pub old_license: u8,
+    pub mask_rom_version_number: u8,
+    pub header_checksum: u8,
+    pub global_checksum: u16,
+    pub data: Vec<u8>,
+    pub rom_0: [u8; 0x8000],
 }
 
 #[allow(unused)]

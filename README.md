@@ -36,9 +36,11 @@ I tried to write **most of the code myself**, using **minimal AI assistance**, o
 ## Features
 
 ### Work in Progress
-- [ ] CPU (SM83)
+- [x] Cartridge
+- [ ] Address Bus
 - [ ] Memory map
-- [ ] Timers
+- [ ] CPU (SM83)
+- [ ] Timer
 - [ ] PPU
 - [ ] Input
 - [ ] Audio

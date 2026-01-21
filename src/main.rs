@@ -23,9 +23,6 @@ const SIZE: usize = WIDTH * HEIGHT;
 fn main() {
     let mut buffer = vec![0u32; SIZE];
 
-    // let mut cpu = CPU::new();
-    // cpu.init();
-
     // I WILL KEEP SOME CODE FOR LATER USE
 
     // let args: Vec<String> = env::args().collect();
@@ -38,8 +35,12 @@ fn main() {
     //     .expect("Must provide a number");
 
     let rom = fs::read(format!("./roms/Tetris_B.gb")).expect("File not exists!");
-    let mut header = CartridgeHeader::new(rom);
-    header.display();
+    let mut cartridge = CartridgeHeader::new(rom);
+    cartridge.display();
+
+    let mut cpu = CPU::new(cartridge);
+    cpu.init();
+
     // let kmap: HashMap<Key, u8> = HashMap::from([
     //     (Key::Key1, 0x1),
     //     (Key::Key2, 0x2),
